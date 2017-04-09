@@ -22,6 +22,7 @@ for k=0:N-1
         ixk(k+1) = ixk(k+1) + (xk(n+1)*exp((%i)*2*%pi*n*k/N));
     end
 end
+ixk = ixk./N;
 mprintf("The IDFT is: \n")
 disp(ixk)
 
